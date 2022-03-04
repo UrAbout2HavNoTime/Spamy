@@ -1,4 +1,4 @@
-import keyboard,pyautogui,time
+import keyboard,time
 spam = input('What do you want to spam to your friends >? ')
 count = input('How much times before pressing enter>?')
 print('Scipt ready and loaded now get on the chat in under 3 seconds')
