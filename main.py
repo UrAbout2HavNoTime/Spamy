@@ -18,3 +18,4 @@ while True:
     counter += 1
     if counter > int(count):
         keyboard.press('enter')
+        counter = 0
