@@ -2,7 +2,8 @@ import keyboard,time
 spam = input('What do you want to spam to your friends >? ')
 count = input('How much times before pressing enter>?')
 print('Scipt ready and loaded now get on the chat in under 3 seconds')
-time.sleep(3)
+time.sleep(4)
+print('Here we go :D')
 counter = 0
 while True:
     for letter in spam:
@@ -10,8 +11,8 @@ while True:
             keyboard.press(letter)
         except TypeError:
             print('dang it no work')
-        time.sleep(.01)
-    time.sleep(.1)
+        time.sleep(.015)
+    time.sleep(0.015)
     keyboard.press('shift')
     keyboard.press('enter')
     keyboard.release('shift')
