@@ -8,12 +8,13 @@ counter = 0
 while True:
     for letter in spam:
         try:
-            pyautogui.press(letter)
+            if letter in ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '~', ':', '"', '{', '}', '|', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M']:
+                pyautogui.press(letter)
+            else:
+                keyboard.press(letter)
+                time.sleep(.01)
         except TypeError:
             print('dang it no work')
-
-        time.sleep(.015)
-    time.sleep(0.015)
     keyboard.press('shift')
     keyboard.press('enter')
     keyboard.release('shift')
